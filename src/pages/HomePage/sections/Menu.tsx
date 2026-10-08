@@ -122,11 +122,11 @@ const MenuInline = () => {
                   videoSrc={item.videoSrc}
                   className="rounded group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none rounded" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent pointer-events-none rounded" />
 
-                <div className="absolute inset-x-5 bottom-5 xl:inset-x-6 xl:bottom-6 2xl:inset-x-7 2xl:bottom-7 flex flex-col text-white drop-shadow-md">
-                  <span className="text-2xl font-semibold leading-snug truncate">{item.title}</span>
-                  <span className="text-base leading-snug truncate">{item.description}</span>
+                <div className="absolute inset-x-3 bottom-3 sm:inset-x-4 sm:bottom-4 p-3.5 sm:p-4 rounded-xl bg-black/75 backdrop-blur-md border border-white/15 flex flex-col text-white shadow-xl">
+                  <span className="text-xl sm:text-2xl font-bold leading-snug text-white tracking-wide">{item.title}</span>
+                  <span className="text-sm sm:text-base leading-relaxed text-gray-100 mt-1">{item.description}</span>
                 </div>
               </div>
             );
