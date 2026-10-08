@@ -64,8 +64,9 @@ const HeroInline = () => {
       <div className="absolute inset-0 bg-black/50 z-[1]" />
 
       <div className="relative z-10 mx-auto pt-35 w-content-width">
-        <div className="flex flex-col gap-3 w-full md:w-6/10 lg:w-1/2 xl:w-45/100 2xl:w-4/10 bg-black/60 backdrop-blur-md p-6 md:p-8 rounded-2xl border border-white/10 shadow-2xl">
-          <div className="mb-1 px-3 py-1 w-fit text-sm card rounded">
+        <div className="flex flex-col gap-4 w-full md:w-6/10 lg:w-1/2 xl:w-45/100 2xl:w-4/10 bg-gradient-to-br from-black/50 via-black/30 to-black/50 backdrop-blur-xl p-8 md:p-10 rounded-3xl border border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 w-fit text-xs font-medium tracking-wide uppercase rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/90">
+            <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
             <p>{"Authentic Jamaican Cuisine"}</p>
           </div>
 
