@@ -48,7 +48,7 @@ const HeroInline = () => {
   return (
     <section
       aria-label="Hero section"
-      className="relative overflow-hidden flex flex-col justify-between mb-20 w-full h-svh"
+      className="relative overflow-hidden flex flex-col justify-between mb-20 w-full min-h-svh h-auto md:h-svh"
     >
       <HeroBackgroundSlot />
       <ImageOrVideo
@@ -56,16 +56,11 @@ const HeroInline = () => {
         className="absolute inset-0 object-cover w-full h-full rounded-none"
       />
 
-      <div
-        className="absolute z-10 left-0 top-0 w-[150vw] h-[150vw] -translate-x-1/2 -translate-y-1/2 backdrop-blur mask-[radial-gradient(circle,black_20%,transparent_70%)]"
-        aria-hidden="true"
-      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40 z-[1]" />
 
-      <div className="absolute inset-0 bg-black/50 z-[1]" />
-
-      <div className="relative z-10 mx-auto pt-35 w-content-width">
-        <div className="flex flex-col gap-4 w-full md:w-6/10 lg:w-1/2 xl:w-45/100 2xl:w-4/10 bg-gradient-to-br from-black/50 via-black/30 to-black/50 backdrop-blur-xl p-8 md:p-10 rounded-3xl border border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.5)] relative overflow-hidden">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 w-fit text-xs font-medium tracking-wide uppercase rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/90">
+      <div className="relative z-10 mx-auto pt-24 md:pt-32 pb-8 w-content-width">
+        <div className="flex flex-col gap-4 w-full md:w-6/10 lg:w-1/2 xl:w-45/100 2xl:w-4/10 bg-black/40 backdrop-blur-md p-6 md:p-10 rounded-2xl md:rounded-3xl border border-white/20 shadow-2xl relative overflow-hidden">
+          <div className="inline-flex items-center gap-2 px-3 py-1 md:px-3.5 md:py-1.5 w-fit text-xs font-medium tracking-wide uppercase rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white">
             <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />
             <p>{"Authentic Jamaican Cuisine"}</p>
           </div>
@@ -75,7 +70,7 @@ const HeroInline = () => {
             variant={"fade-blur"}
             gradientText={true}
             tag="h1"
-            className="text-7xl 2xl:text-8xl leading-[1.15] font-semibold text-balance text-white"
+            className="text-4xl sm:text-5xl md:text-7xl 2xl:text-8xl leading-tight font-bold text-balance text-white"
           />
 
           <TextAnimation
